@@ -29,6 +29,9 @@ gulp.task('moveCss',['clean:css'], function(){
   // preserving the folder structure
   gulp.src(['./app/styles/**/*.css'], { base: './app/styles/' })
   .pipe(gulp.dest('dist/styles'));
+
+  gulp.src(['./app/font-awesome/**/*'], { base: './app/font-awesome/'})
+  .pipe(gulp.dest('dist/font-awesome'));
 });
 
 
